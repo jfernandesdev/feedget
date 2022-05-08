@@ -42,10 +42,11 @@ function Widget(){
           handleIndicatorStyle={styles.indicator}
 
       >
-        {/* <Form 
+        <Form 
           feedbackType="BUG"
-        /> */}
-        <Success />
+        />
+
+        {/* <Success /> */}
 
       </BottomSheet>
     </>
