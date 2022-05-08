@@ -5,9 +5,14 @@ import BottomSheet from '@gorhom/bottom-sheet';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 import { Options } from '../Options';
+import { Form } from '../Form';
+import { Success } from '../Success';
 
 import { theme } from '../../theme';
+import { feedbackTypes } from '../../utils/feedbackTypes';
 import { styles } from './styles';
+
+export type FeedbackTypes = keyof typeof feedbackTypes;
 
 function Widget(){
 
@@ -37,7 +42,10 @@ function Widget(){
           handleIndicatorStyle={styles.indicator}
 
       >
-        <Options/>
+        {/* <Form 
+          feedbackType="BUG"
+        /> */}
+        <Success />
 
       </BottomSheet>
     </>
